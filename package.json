@@ -1,0 +1,29 @@
+{
+  "name": "hobbyhub",
+  "version": "1.0.0",
+  "description": "HobbyHub — Next-Generation Modern Online Forum for Hobbyists and Enthusiasts",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  },
+  "keywords": [
+    "forum",
+    "hobbyists",
+    "enthusiasts",
+    "react",
+    "vite",
+    "express",
+    "mongodb",
+    "modern-css",
+    "glassmorphism"
+  ],
+  "author": "HobbyHub Team",
+  "license": "MIT"
+}
